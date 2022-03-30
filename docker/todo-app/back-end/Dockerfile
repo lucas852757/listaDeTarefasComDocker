@@ -4,5 +4,5 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 ADD node_modules.tar.gz /usr/src/app
-CMD npm start
+CMD ["npm","start"]
 EXPOSE 3001
