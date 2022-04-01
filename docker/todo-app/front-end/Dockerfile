@@ -1,7 +1,7 @@
 FROM node:14-alpine
-WORKDIR /frontend 
+WORKDIR /usr/src/app 
 COPY package*.json ./
-COPY . .
 ADD node_modules.tar.gz ./
+COPY . .
 EXPOSE 3000
 CMD ["npm","start"]
